@@ -1,10 +1,37 @@
 const rxjs = require("rxjs");
-const numeros$ = rxjs.of(1, 2, 3, 4, 5, 6);
+const map = require("rxjs/operators").map;
+const distinct = require("rxjs/operators").distinct;
+const concat = require("rxjs/operators").concat;
+const numeros$ = rxjs.of(1, 1, true, [1, 2], new Date(), { nombre: "Adrian" });
 console.log(numeros$);
-numeros$.subscribe((ok) => {
+const promesita = (correcto) => {
+    return new Promise((resolve, reject) => {
+        if (correcto) {
+            resolve(":)");
+        }
+        else {
+            reject(":(");
+        }
+    });
+};
+const promesita$ = rxjs.from(promesita(true));
+numeros$.pipe(concat(promesita$)).pipe(distinct()).pipe(map((value) => {
+    return { data: value };
+})).subscribe((ok) => {
     console.log("En ok", ok);
 }, (error) => {
     console.log("Error", error);
 }, (complete) => {
     console.log("complete", complete);
 });
+/*
+
+const promesita$ = rxjs.from(promesita(false)).subscribe(
+    (ok)=>{
+        console.log("En ok",ok);
+    },
+    (error)=>{
+        console.log("Error",error);
+    },(complete)=>{console.log("complete",complete);
+    }
+);*/ 
