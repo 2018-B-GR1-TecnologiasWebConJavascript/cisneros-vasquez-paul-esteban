@@ -85,15 +85,8 @@ function main() {
 
     inicializarBase()
         .pipe(
-            preguntarOpcionesMenu())
-        .pipe(
-            map(
-                (usuario: Usuario) => {
-                    respuesta.usuario = usuario;
-                    respuesta.bdd.usuarios.push(respuesta.usuario);
-                    return respuesta;
-                }
-            ),
+            preguntarOpcionesMenu(),
+            preguntarDatos(),
             actualizarBDD()
         )
         .subscribe(
@@ -162,11 +155,11 @@ function leerBDD() {
 }
 
 function crearBDD() {
-    const contenido = '{"usuarios":[],"Videos":[]}';
+    const contenido = '{"pokemon":[],"Videos":[]}';
     return new Promise(
         (resolve, reject) => {
             fs.writeFile(
-                'data.json',
+                'prueba.json',
                 contenido,
                 (error) => {
                     if (error) {
@@ -227,10 +220,23 @@ function preguntarOpcionesMenu() {
     );
 }
 
+function preguntarDatos() {
+    return mergeMap(
+        (respuesta: RespuestaLeerBDD) => {
+                    return rxjs
+                        .from()
+                        .pipe(
+                            map(
+                                (usuario: Usuario) => {
+                                    respuesta.pokemon = pokemon;
+                                    respuesta.bdd.pokemon.push(respuesta.pokemon);
+                                    return respuesta;
+                                }
+                            )
+                        );
 
-
-
-
+        }
+    );
 }
 
 function actualizarBDD() {
@@ -352,7 +358,7 @@ export interface BaseDeDatos {
     mascotas: Mascota[];
 }
 
-interface Usuario {
+interface pokemon {
     id: number;
     nombre?: string;
 }
