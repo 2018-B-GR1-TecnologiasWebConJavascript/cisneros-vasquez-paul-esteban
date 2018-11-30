@@ -227,7 +227,7 @@ function preguntarDatos() {
                         .from()
                         .pipe(
                             map(
-                                (usuario: Usuario) => {
+                                (pokemon: Pokemon) => {
                                     respuesta.pokemon = pokemon;
                                     respuesta.bdd.pokemon.push(respuesta.pokemon);
                                     return respuesta;
@@ -350,11 +350,11 @@ interface RespuestaLeerBDD {
     mensaje: string;
     bdd?: BaseDeDatos;
     opcionMenu?: OpcionMenu;
-    usuario?: Usuario;
+    pokemon?: Pokemon;
 }
 
 export interface BaseDeDatos {
-    usuarios: Usuario[];
+    pokemons: Pokemon[];
     mascotas: Mascota[];
 }
 
