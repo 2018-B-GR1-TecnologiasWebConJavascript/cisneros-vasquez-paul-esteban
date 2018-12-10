@@ -1,4 +1,4 @@
-declare var require: any;
+    declare var require: any;
 const inquirer = require('inquirer');
 const async = require("async");
 const rxjs = require("rxjs");

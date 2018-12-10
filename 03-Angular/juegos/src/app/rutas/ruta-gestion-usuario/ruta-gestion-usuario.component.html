@@ -1,0 +1,24 @@
+<p>
+  ruta-gestion-usuario works!
+</p>
+
+<h3> Usuarios </h3>
+
+<table >
+  <!----tr table row y th table header td table datail --->
+  <tr>
+    <th> Nombre</th>
+    <th> id </th>
+  </tr>
+  <tr *ngFor="let usuario of usuarios"><!---
+    <td> {{usuarios[0].id}}</td>
+    <td> {{usuarios[0].nombre}}</td>--->
+    <td> {{usuario.id}}</td>
+    <td> {{usuario.nombre}}</td>
+
+  </tr>
+</table>
+
+<!--- interpolzacion usar los atributos de ts --->
+<!--- Directivas
+*ngfor Itera un arreglo-->
