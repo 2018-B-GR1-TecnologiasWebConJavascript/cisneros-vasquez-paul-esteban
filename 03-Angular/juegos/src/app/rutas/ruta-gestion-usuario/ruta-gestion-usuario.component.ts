@@ -16,7 +16,9 @@ usuarios: Usuario[] = [
 
   ngOnInit() {
   }
-
+ hola(){
+   return console.log("holaaa...")
+      }
 }
 
 interface Usuario {

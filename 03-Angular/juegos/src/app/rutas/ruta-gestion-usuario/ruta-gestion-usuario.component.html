@@ -9,16 +9,20 @@
   <tr>
     <th> Nombre</th>
     <th> id </th>
+    <th> Accion</th>
   </tr>
   <tr *ngFor="let usuario of usuarios"><!---
     <td> {{usuarios[0].id}}</td>
     <td> {{usuarios[0].nombre}}</td>--->
     <td> {{usuario.id}}</td>
     <td> {{usuario.nombre}}</td>
-
+  <td> <button (click)="hola()"> Eliminar  </button></td>
   </tr>
 </table>
 
 <!--- interpolzacion usar los atributos de ts --->
 <!--- Directivas
 *ngfor Itera un arreglo-->
+
+
+<!-- event Bindinf (NombreEvento)="funcionEnlaClase()"--->
