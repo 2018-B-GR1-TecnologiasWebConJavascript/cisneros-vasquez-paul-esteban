@@ -10,6 +10,8 @@ import { RutaPerfilComponent } from './rutas/ruta-perfil/ruta-perfil.component';
 import { RutaMenuComponent } from './rutas/ruta-menu/ruta-menu.component';
 import { RutaGestionUsuarioComponent } from './rutas/ruta-gestion-usuario/ruta-gestion-usuario.component';
 import { RutaGestionProductosComponent } from './rutas/ruta-gestion-productos/ruta-gestion-productos.component';
+import {UsuarioServiceService} from "./servicios/usuario-service.service";
+import { RutaVerDetalleUsuarioComponent } from './rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,14 @@ import { RutaGestionProductosComponent } from './rutas/ruta-gestion-productos/ru
     RutaPerfilComponent,
     RutaMenuComponent,
     RutaGestionUsuarioComponent,
-    RutaGestionProductosComponent
+    RutaGestionProductosComponent,
+    RutaVerDetalleUsuarioComponent
   ],// Components
   imports: [
     BrowserModule,
     AppRoutingModule
   ],// modulos
-  providers: [],// Servicios
+  providers: [UsuarioServiceService],// Servicios
   bootstrap: [AppComponent] // componente principar
 })
 export class AppModule { }

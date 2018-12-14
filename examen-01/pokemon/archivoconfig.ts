@@ -23,7 +23,7 @@ function busquedaTypes() {
                         resolve(respuestaFind);
                     }
                 });
-        }
+        }ng serve
     );
 }
 

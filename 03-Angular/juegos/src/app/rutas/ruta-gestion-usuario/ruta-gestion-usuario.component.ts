@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {UsuarioServiceService} from "../../servicios/usuario-service.service";
 
 @Component({
   selector: 'app-ruta-gestion-usuario',
@@ -6,20 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ruta-gestion-usuario.component.scss']
 })
 export class RutaGestionUsuarioComponent implements OnInit {
-usuarios: Usuario[] = [
-  {id:1,
-  nombre: "Paul"},
-  {id:2,
-    nombre: "Esteban"}
-];
-  constructor() { }
+  usuarios=[];
+//inyeccion de dependencias
+  constructor(
+    private readonly _usuarioService:UsuarioServiceService
+  ) { }
 
   ngOnInit() {
+    this.usuarios = this._usuarioService.usuarios;
+
   }
- hola(){
-   return console.log("holaaa...")
-      }
+
+  eliminar(usuario){
+
+    const indiceUsuarioEliminar = this._usuarioService.eliminar(usuario.id);
+    console.log(indiceUsuarioEliminar);
+
+  }
 }
+
+
 
 interface Usuario {
   nombre?: string;

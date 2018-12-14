@@ -7,6 +7,7 @@ import {RutaPerfilComponent} from "./rutas/ruta-perfil/ruta-perfil.component";
 import {Ruta404Component} from "./rutas/ruta404/ruta404.component";
 import {RutaGestionUsuarioComponent} from "./rutas/ruta-gestion-usuario/ruta-gestion-usuario.component";
 import {RutaGestionProductosComponent} from "./rutas/ruta-gestion-productos/ruta-gestion-productos.component";
+import {RutaVerDetalleUsuarioComponent} from "./rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component";
 
 const routes: Routes = [{
   //Nombre
@@ -35,6 +36,10 @@ const routes: Routes = [{
     {
       path: 'gestion-producto',
       component: RutaGestionProductosComponent
+    },
+    {
+      path: 'ver-usuario/:idUsuario',
+      component: RutaVerDetalleUsuarioComponent
     }
   ]
 }, {
