@@ -50,7 +50,7 @@ export class RutaGestionUsuarioComponent implements OnInit {
       this.busquedax = [];
       //&& valuex.estado=='VIGENTE'
       const helado = this.busqueda.forEach((valuex) => {
-        if ((valuex.nombre == f.value.BrowNombre)) {
+        if ((valuex.nombre == f.value.BrowNombre) ||(valuex.correo == f.value.BrowNombre) ) {
 
           this.busquedax.push(valuex);
         }

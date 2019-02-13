@@ -30,8 +30,8 @@ module.exports.bootstrap = async function() {
   }
   //
   await Usuario.createEach([
-    { nombre: 'Paul' , correo: 'paul.cisneros@epn.edu.ec',password: '1234', fechanacimiento: '1995-03-20',},
-    { nombre: 'Gabo' , correo: 'gabo.x@epn.edu.ec',password: '1234', fechanacimiento: '1995-05-25',},
+    { nombre: 'Paul' , correo: 'paul.cisneros@epn.edu.ec',password: 'X12345678@', fechanacimiento: '1995-03-20',},
+    { nombre: 'Gabo' , correo: 'gabo.x@epn.edu.ec',password: 'X12345678@', fechanacimiento: '1995-05-25',},
 
     //   // etc.
   ]);

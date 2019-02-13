@@ -24,7 +24,6 @@ export class RutaRegistroComponent implements OnInit {
         usuarioObjeto.correo,
         usuarioObjeto.password,
         "1995-25-01",
-
       );
 
     crearRaza$

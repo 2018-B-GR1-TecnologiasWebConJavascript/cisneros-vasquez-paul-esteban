@@ -11,15 +11,18 @@ module.exports = {
 
     nombre: {
       type: 'string',
-      required: true
+      required: true,
+        regex: /^[a-zA-Z ]*$/
     },
     correo: {
       type: 'string',
-      required: true
+      required: true,
+      isEmail: true
     },
     password: {
       type: 'string',
-      required: true
+      required: true,
+     // regex: /^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,15})$/
     },
     fechanacimiento: {
       type: 'string',

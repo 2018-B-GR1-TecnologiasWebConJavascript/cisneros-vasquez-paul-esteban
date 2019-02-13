@@ -1,17 +1,50 @@
-<app-formulario-usuario
-
-  (formularioValido)="actualizarUsuario($event)"
-></app-formulario-usuario>
-<div>
-
-  <p>Eliminar Roles</p>
-
-  <div *ngFor="let rol of roles" >
-    <button (click)="onClickMe(rol.id)" >
-      {{rol.nombre}}
-    </button>
-
-  </div>
 
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <app-formulario-usuario
+
+              (formularioValido)="actualizarUsuario($event)"
+      ></app-formulario-usuario>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-6">
+
+          <div>
+            <form #formularioRol="ngForm"
+                  novalidate
+            >
+
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="BrowRolesx">Tipo de Convenio</label>
+              </div>
+
+              <input class="custom-select" list="browrolx" id="BrowRolesx" name="BrowRolesx" ngModel />
+              <datalist id="browrolx" >
+                <option *ngFor="let cbxrol of cbxrols" value=  {{cbxrol.nombre}}>
+              </datalist>
+
+              <button  (click)="onClickRol(formularioRol)">
+                Agregar roles
+              </button></form>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div>
+
+            <p>Eliminar Roles</p>
+
+            <div *ngFor="let rol of roles" >
+              <button (click)="onClickMe(rol.id)" >
+                {{rol.nombre}}
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </div></div></div>
 </div>

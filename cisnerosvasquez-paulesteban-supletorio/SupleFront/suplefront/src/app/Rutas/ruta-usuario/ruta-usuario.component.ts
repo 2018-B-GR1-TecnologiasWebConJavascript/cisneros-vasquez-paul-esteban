@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {UsuarioServicio} from "../../Servicios/usuario-servicio";
 import { Rol } from 'src/app/Interfaces/Rol';
 import { RolServicio } from 'src/app/Servicios/rol-servicio';
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-ruta-usuario',
@@ -12,6 +13,7 @@ import { RolServicio } from 'src/app/Servicios/rol-servicio';
 })
 export class RutaUsuarioComponent implements OnInit {
   UsuarioAActualizar: Usuario;
+    cbxrols: any=[];
   // roles = [{nombre:"Administrador", id:1}, {nombre:"Usuario",id:2}]
   roles : any= [];
   constructor(private readonly _activatedRoute: ActivatedRoute,
@@ -41,7 +43,11 @@ export class RutaUsuarioComponent implements OnInit {
 
         });*/
 
+      const usuarios$ = this._rolservicio.findAll();
+      usuarios$.subscribe((usuarios: Usuario[]) => {
+          this.cbxrols=usuarios;
 
+      });
 
 
 
@@ -56,6 +62,7 @@ export class RutaUsuarioComponent implements OnInit {
               (usuario: Usuario) => {
                 this.roles = [];
                 this.UsuarioAActualizar = usuario;
+
                 const usuariosrolx = usuario.roles
                   .forEach(
                     (rol) => {
@@ -108,6 +115,42 @@ export class RutaUsuarioComponent implements OnInit {
         }
       );
   }
+    onClickRol(formularioRol: NgForm) {
+      const agregarrol = this.roles.findIndex(rol => rol.nombre === formularioRol.value.BrowRolesx);
+       /* console.log(this.roles.some((value)=>{ value.nombre===formularioRol.value.BrowRolesx
+            console.log("1"+formularioRol.value.BrowRolesx);
+            console.log("2"+value.nombre);
+        }));*/
+        console.log("2"+agregarrol);
+        //const agregarrol = true;
+        if(agregarrol){
+            console.log("Inicio");
+            console.log(formularioRol.value.BrowRolesx);
+            console.log(this.cbxrols.findIndex(rol => rol.nombre === formularioRol.value.BrowRolesx));
+            console.log(this.UsuarioAActualizar.id);
+
+            const crearRol$ = this._usuarioservicio.crearRol((this.cbxrols.findIndex(rol => rol.nombre === formularioRol.value.BrowRolesx)+1),this.UsuarioAActualizar.id);
+
+            crearRol$
+                .subscribe(
+                    (usuario: Usuario) => {
+                        console.log('Rolcreado');
+                        this.roles.push({nombre:formularioRol.value.BrowRolesx, id:2},);
+
+                    },
+                    (error) => {
+                        console.error('Error: ', error);
+                    }
+                );
+
+      }else{
+            console.log("No se creo el rol");
+            alert("Rol repetido")
+
+      }
+
+
+    }
 
   actualizarUsuario(objetoUsuario) {
 
