@@ -1,0 +1,31 @@
+<h1>Eventos</h1>
+
+<div *ngFor="let imagen of imagenes">
+
+
+  <app-actores
+    [id]="imagen.id"
+    [nombres]="imagen.nombres"
+    [apellidos]="imagen.apellidos"
+    [fechanacimiento]="imagen.fechanacimiento"
+    [numeropeliculas]="imagen.numeropeliculas"
+    [retirado]="imagen.retirado"
+  >
+  </app-actores>
+
+</div>
+<h1>Peliculas Recomendadas</h1>
+<div *ngFor="let imagen2 of imagenes2">
+
+
+  <app-peliculas
+    [id]="imagen2.id"
+    [nombre]="imagen2.nombre"
+    [aniolanzamiento]="imagen2.aniolanzamiento"
+    [rating]="imagen2.rating"
+    [actoresprincipales]="imagen2.actoresprincipales"
+    [sinopsis]="imagen2.sinopsis"
+  >
+  </app-peliculas>
+
+</div>

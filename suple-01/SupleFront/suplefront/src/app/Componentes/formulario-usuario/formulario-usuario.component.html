@@ -1,0 +1,92 @@
+<form #formularioUsuario="ngForm"
+      novalidate
+      (submit)="emitirFormularioValido(formularioUsuario)"
+>
+  <div>
+    <p *ngIf="inputNombre.errors">
+
+      <p-message
+        *ngIf="inputNombre.errors.required"
+        severity="warn"
+        text="Error: El nombre es requerido"></p-message>
+
+    </p>
+    <p *ngIf="inputPassword.errors">
+
+      <p-message
+        *ngIf="inputPassword.errors.required"
+        severity="warn"
+        text="Error: El password es requerido"></p-message>
+
+    </p>
+    <p *ngIf="inputCorreo.errors">
+
+      <p-message
+        *ngIf="inputCorreo.errors.required"
+        severity="warn"
+        text="Error: El correo es requerido"></p-message>
+      <p-message
+        *ngIf="inputCorreo.errors.email"
+        severity="warn"
+        text="Error: Ingrese un correo valido"></p-message>
+
+    </p>
+
+
+
+
+    <label [hidden]="true"
+           for="nombreU">Nombre</label>
+
+    <div class="ui-inputgroup">
+      <input id="nombreU"
+
+             pInputText
+             placeholder="NombreU"
+
+
+             required
+             type="text"
+             name="nombreU"
+             [(ngModel)]="nombreU"
+             #inputNombre="ngModel"
+      >
+    </div>
+
+  </div>
+
+  <div>
+    <label for="correoU">Correo</label>
+    <input id="correoU"
+           name="correoU"
+           type="text"
+           required
+           [(ngModel)]="correoU"
+           #inputCorreo="ngModel"
+    >
+  </div>
+  <div>
+    <label for="passwordU">Password</label>
+    <input id="passwordU"
+           name="passwordU"
+           type="password"
+           required
+           [(ngModel)]="passwordU"
+           #inputPassword="ngModel"
+    >
+  </div>
+  <div>
+
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="BrowRoles">Tipo de Convenio</label>
+    </div>
+
+    <input class="custom-select" list="browrol" id="BrowRoles" name="BrowRoles" ngModel />
+    <datalist id="browrol" >
+      <option *ngFor="let cbxrol of cbxrols" value=  {{cbxrol.nombre}}>
+    </datalist></div>
+
+  <button>
+    Enviar Datos
+  </button>
+</form>

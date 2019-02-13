@@ -1,0 +1,17 @@
+<app-formulario-usuario
+
+  (formularioValido)="actualizarUsuario($event)"
+></app-formulario-usuario>
+<div>
+
+  <p>Eliminar Roles</p>
+
+  <div *ngFor="let rol of roles" >
+    <button (click)="onClickMe(rol.id)" >
+      {{rol.nombre}}
+    </button>
+
+  </div>
+
+
+</div>

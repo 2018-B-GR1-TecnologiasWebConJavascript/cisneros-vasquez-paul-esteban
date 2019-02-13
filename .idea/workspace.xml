@@ -12,6 +12,7 @@
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,83 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts">
+      <file leaf-file-name="UsuarioController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/suple-01/SupleBack/supleback/api/controllers/UsuarioController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="37" selection-start-column="37" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/servicios/usuario-service.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1037">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -188,6 +117,12 @@
         <option value="$PROJECT_DIR$/03-Angular/juegos/src/app/servicios/usuario-service.service.ts" />
         <option value="$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component.ts" />
         <option value="$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component.html" />
+        <option value="$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Actor.js" />
+        <option value="$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Eventos.js" />
+        <option value="$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Pelicula.js" />
+        <option value="$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Rol.js" />
+        <option value="$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Usuario.js" />
+        <option value="$PROJECT_DIR$/suple-01/SupleBack/supleback/api/controllers/UsuarioController.js" />
       </list>
     </option>
   </component>
@@ -198,109 +133,27 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/03-Angular/juegos/node_modules" />
+    <handled-path value="$PROJECT_DIR$/suple-01/SupleBack/supleback/node_modules" />
+    <handled-path value="$PROJECT_DIR$/suple-01/SupleFront/suplefront/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/ansi-escapes/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/chalk/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/chardet/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/cli-cursor/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/cli-width/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/color-convert/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/color-name/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/escape-string-regexp/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/external-editor/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/figures/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/inquirer/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/is-fullwidth-code-point/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/is-promise/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/lodash/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/mimic-fn/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/mute-stream/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/onetime/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/os-tmpdir/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/restore-cursor/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/run-async/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/ajax/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/internal-compatibility/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/operators/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/src/ajax/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/src/internal-compatibility/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/src/operators/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/src/testing/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/src/webSocket/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/testing/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/rxjs/webSocket/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/signal-exit/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/through/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/tmp/package.json" />
-      <path value="$PROJECT_DIR$/02-typescript/node_modules/tslib/package.json" />
       <path value="$PROJECT_DIR$/03-Angular/juegos/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/ansi-escapes/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/chalk/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/chardet/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/cli-cursor/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/cli-width/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/color-convert/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/color-name/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/escape-string-regexp/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/external-editor/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/figures/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/inquirer/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/is-fullwidth-code-point/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/is-promise/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/lodash/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/mimic-fn/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/mute-stream/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/onetime/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/os-tmpdir/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/restore-cursor/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/run-async/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/ajax/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/internal-compatibility/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/operators/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/src/ajax/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/src/internal-compatibility/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/src/operators/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/src/testing/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/src/webSocket/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/testing/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/rxjs/webSocket/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/signal-exit/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/through/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/tmp/package.json" />
-      <path value="$PROJECT_DIR$/examen-01/pokemon/node_modules/tslib/package.json" />
+      <path value="$PROJECT_DIR$/04-Backend/videos-backend/package.json" />
+      <path value="$PROJECT_DIR$/suple-01/SupleBack/supleback/package.json" />
+      <path value="$PROJECT_DIR$/suple-01/SupleFront/suplefront/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="713" />
+    <option name="width" value="734" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,18 +161,54 @@
               <item name="cisneros-vasquez-paul-esteban" type="b2602c69:ProjectViewProjectNode" />
               <item name="cisneros-vasquez-paul-esteban" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cisneros-vasquez-paul-esteban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cisneros-vasquez-paul-esteban" type="462c0819:PsiDirectoryNode" />
+              <item name="suple-01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cisneros-vasquez-paul-esteban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cisneros-vasquez-paul-esteban" type="462c0819:PsiDirectoryNode" />
+              <item name="suple-01" type="462c0819:PsiDirectoryNode" />
+              <item name="SupleBack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cisneros-vasquez-paul-esteban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cisneros-vasquez-paul-esteban" type="462c0819:PsiDirectoryNode" />
+              <item name="suple-01" type="462c0819:PsiDirectoryNode" />
+              <item name="SupleBack" type="462c0819:PsiDirectoryNode" />
+              <item name="supleback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cisneros-vasquez-paul-esteban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cisneros-vasquez-paul-esteban" type="462c0819:PsiDirectoryNode" />
+              <item name="suple-01" type="462c0819:PsiDirectoryNode" />
+              <item name="SupleBack" type="462c0819:PsiDirectoryNode" />
+              <item name="supleback" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cisneros-vasquez-paul-esteban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cisneros-vasquez-paul-esteban" type="462c0819:PsiDirectoryNode" />
+              <item name="suple-01" type="462c0819:PsiDirectoryNode" />
+              <item name="SupleBack" type="462c0819:PsiDirectoryNode" />
+              <item name="supleback" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/suple-01" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/03-Angular/juegos/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/suple-01/SupleFront/suplefront/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -354,33 +243,35 @@
       <workItem from="1543873523695" duration="1501000" />
       <workItem from="1543932694964" duration="591000" />
       <workItem from="1544821815143" duration="5676000" />
+      <workItem from="1550069192847" duration="1550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9234000" />
+    <option name="totallyTimeSpent" value="10784000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="713" y="0" width="734" height="867" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49895832" visible="true" weight="0.24970461" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.50104165" side_tool="true" visible="true" weight="0.24970461" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32869786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49603173" visible="true" weight="0.5" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.329927" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29927006" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33509234" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" sideWeight="0.50396824" side_tool="true" visible="true" weight="0.5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +286,71 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/servicios/usuario-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/02-typescript/01-tipos-variables.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -458,14 +414,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/servicios/usuario-service.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        <state relative-caret-position="646">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-ver-detalle-usuario/ruta-ver-detalle-usuario.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="391">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -473,19 +429,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Eventos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        <state relative-caret-position="391">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app-routing.module.ts">
+    <entry file="file://$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Pelicula.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="419">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Rol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Usuario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suple-01/SupleBack/supleback/api/models/Actor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="17" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -504,13 +488,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts">
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="419">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-Angular/juegos/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="28" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suple-01/SupleBack/supleback/api/controllers/UsuarioController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>

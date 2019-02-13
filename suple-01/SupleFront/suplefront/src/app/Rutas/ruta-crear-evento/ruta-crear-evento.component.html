@@ -1,0 +1,54 @@
+<form #formularioUsuario="ngForm"
+      novalidate
+      (submit)="CrearUsuario(formularioUsuario)"
+>
+  <div>
+    <p *ngIf="inputNombre.errors">
+
+      <p-message
+        *ngIf="inputNombre.errors.required"
+        severity="warn"
+        text="Error: El nombre es requerido"></p-message>
+
+    </p>
+    <label [hidden]="true"
+           for="nombre">Nombre</label>
+
+    <div class="ui-inputgroup">
+      <input id="nombre"
+
+             pInputText
+             placeholder="Nombre"
+
+
+             required
+             type="text"
+             name="nombre"
+             [(ngModel)]="nombre"
+             #inputNombre="ngModel"
+      >
+    </div>
+    <div class="ui-inputgroup">
+      <input id="fecha"
+
+             pInputText
+             placeholder="fecha"
+
+
+             type="text"
+             name="fecha"
+             [(ngModel)]="fecha"
+             #inputNombre="ngModel"
+      >
+    </div>
+  </div>
+
+
+
+
+
+
+  <button>
+    Enviar Datos
+  </button>
+</form>
