@@ -14,20 +14,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ruta-gestion-usuario.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts">
+      <file leaf-file-name="ruta-usuario.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="102" column="12" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ruta-gestion-eventos.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-gestion-eventos/ruta-gestion-eventos.component.ts">
+      <file leaf-file-name="ruta-usuario.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -70,13 +73,13 @@
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-registro/ruta-registro.component.html" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-registro/ruta-registro.component.ts" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.html" />
-        <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Servicios/evento-servicio.ts" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Componentes/login-componente/login-componente.component.html" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Componentes/login-componente/login-componente.component.ts" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-gestion-eventos/ruta-gestion-eventos.component.ts" />
+        <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts" />
       </list>
     </option>
   </component>
@@ -2317,6 +2320,15 @@
               <item name="suplefront" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="suple-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="suple-01" type="462c0819:PsiDirectoryNode" />
+              <item name="SupleFront" type="462c0819:PsiDirectoryNode" />
+              <item name="suplefront" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Rutas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2327,17 +2339,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Rutas" type="462c0819:PsiDirectoryNode" />
-              <item name="ruta-gestion-eventos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="suple-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="suple-01" type="462c0819:PsiDirectoryNode" />
-              <item name="SupleFront" type="462c0819:PsiDirectoryNode" />
-              <item name="suplefront" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Rutas" type="462c0819:PsiDirectoryNode" />
-              <item name="ruta-gestion-usuario" type="462c0819:PsiDirectoryNode" />
+              <item name="ruta-usuario" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="suple-01" type="b2602c69:ProjectViewProjectNode" />
@@ -2402,12 +2404,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550070762738</updated>
-      <workItem from="1550070766614" duration="5435000" />
+      <workItem from="1550070766614" duration="6749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5435000" />
+    <option name="totallyTimeSpent" value="6749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -2445,13 +2447,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SupleBack/supleback/config/security.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SupleBack/supleback/config/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -2505,16 +2500,6 @@
           <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2612,16 +2597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Componentes/formulario-usuario/formulario-usuario.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Componentes/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -2662,9 +2637,6 @@
     <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-login/ruta-login.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-inicio/ruta-inicio.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-login/ruta-login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2692,23 +2664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Servicios/evento-servicio.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -2721,16 +2676,6 @@
         <state>
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2771,8 +2716,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-gestion-eventos/ruta-gestion-eventos.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        <state relative-caret-position="221">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-inicio/ruta-inicio.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Componentes/formulario-usuario/formulario-usuario.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="102" column="12" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

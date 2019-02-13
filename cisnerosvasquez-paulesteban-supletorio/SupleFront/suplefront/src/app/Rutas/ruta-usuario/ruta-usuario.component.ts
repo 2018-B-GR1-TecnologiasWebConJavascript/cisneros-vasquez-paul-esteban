@@ -99,8 +99,9 @@ export class RutaUsuarioComponent implements OnInit {
         (usuario: Usuario) => {
           console.log('Roeliminado');
           alert('Rol eliminado para el Usuario' + usuario.nombre);
-          const url = ['/gestionusuarios'];
-          this._router.navigate(url);
+         // const url = ['/gestionusuarios'];
+          //this._router.navigate(url);
+          this.roles.splice(this.roles.findIndex(rol => rol.id === id), 1);
         },
         (error) => {
           console.error('Error: ', error);
