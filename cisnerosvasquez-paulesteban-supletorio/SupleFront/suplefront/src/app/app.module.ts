@@ -27,6 +27,11 @@ import {PeliculaServicio} from "./Servicios/pelicula-servicio";
 import { RolServicio } from './Servicios/rol-servicio';
 import { RutaCrearEventoComponent } from './Rutas/ruta-crear-evento/ruta-crear-evento.component';
 import { RutaCrearActorComponent } from './Rutas/ruta-crear-actor/ruta-crear-actor.component';
+import { RutaCrearPeliculaComponent } from './Rutas/ruta-crear-pelicula/ruta-crear-pelicula.component';
+import { FormularioActorComponent } from './Componentes/formulario-actor/formulario-actor.component';
+import { FormularioPeliculaComponent } from './Componentes/formulario-pelicula/formulario-pelicula.component';
+import { RutaActorComponent } from './Rutas/ruta-actor/ruta-actor.component';
+import { RutaActualizarActorComponent } from './Rutas/ruta-actualizar-actor/ruta-actualizar-actor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +47,12 @@ import { RutaCrearActorComponent } from './Rutas/ruta-crear-actor/ruta-crear-act
     ActoresComponent,
     PeliculasComponent,
     RutaCrearEventoComponent,
-    RutaCrearActorComponent
+    RutaCrearActorComponent,
+    RutaCrearPeliculaComponent,
+    FormularioActorComponent,
+    FormularioPeliculaComponent,
+    RutaActorComponent,
+    RutaActualizarActorComponent
   ],
   imports: [
     BrowserModule,

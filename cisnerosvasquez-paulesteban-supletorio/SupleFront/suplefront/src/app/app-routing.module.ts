@@ -8,6 +8,10 @@ import { RutaGestionEventosComponent } from './Rutas/ruta-gestion-eventos/ruta-g
 import { RutaUsuarioComponent } from './Rutas/ruta-usuario/ruta-usuario.component';
 import { RutaEventoComponent } from './Rutas/ruta-evento/ruta-evento.component';
 import { RutaCrearEventoComponent } from './Rutas/ruta-crear-evento/ruta-crear-evento.component';
+import {RutaCrearActorComponent} from "./Rutas/ruta-crear-actor/ruta-crear-actor.component";
+import {RutaActorComponent} from "./Rutas/ruta-actor/ruta-actor.component";
+import {RutaActualizarActorComponent} from "./Rutas/ruta-actualizar-actor/ruta-actualizar-actor.component";
+import {RutaCrearPeliculaComponent} from "./Rutas/ruta-crear-pelicula/ruta-crear-pelicula.component";
 
 const routes: Routes = [
   {
@@ -66,7 +70,30 @@ const routes: Routes = [
       },
 
     ]
-  },
+  }, {
+        // NOMBRE
+        path: 'actor',
+
+        component: RutaActorComponent,
+        children:[
+            {
+                // menu/gestion-usuarios
+                path: 'crearactor',
+                component: RutaCrearActorComponent,
+            },
+            {
+                // menu/gestion-usuarios
+                path: 'crearpelicula',
+                component: RutaCrearPeliculaComponent,
+            },
+            {
+                // menu/gestion-usuarios
+                path: ':idActor',
+                component: RutaActualizarActorComponent,
+            },
+
+        ]
+    }
 ];
 
 @NgModule({

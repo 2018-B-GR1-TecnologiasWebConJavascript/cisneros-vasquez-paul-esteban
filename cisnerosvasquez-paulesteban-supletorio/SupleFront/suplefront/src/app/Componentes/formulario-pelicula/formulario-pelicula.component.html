@@ -1,0 +1,114 @@
+<form #formularioPelicula="ngForm"
+      novalidate
+      (submit)="emitirFormularioValido(formularioPelicula)"
+>
+  <div>
+    <p *ngIf="inputNombre.errors">
+
+      <p-message
+        *ngIf="inputNombre.errors.required"
+        severity="warn"
+        text="Error: El nombre es requerido"></p-message>
+
+    </p>
+    <p *ngIf="inputActoresprincipales.errors">
+
+      <p-message
+        *ngIf="inputActoresprincipales.errors.required"
+        severity="warn"
+        text="Error: El apellido es requerido"></p-message>
+
+    </p>
+    <p *ngIf="inputFecha.errors">
+
+      <p-message
+        *ngIf="inputFecha.errors.required"
+        severity="warn"
+        text="Error: La fecha es requerido"></p-message>
+      <p-message
+        *ngIf="inputNumero.errors.email"
+        severity="warn"
+        text="Error: Un numero"></p-message>
+
+    </p>
+
+
+
+
+    <label [hidden]="true"
+           for="nombreP">Nombre</label>
+
+    <div class="ui-inputgroup">
+      <input id="nombreP"
+
+             pInputText
+             placeholder="nombreP"
+
+
+             required
+             type="text"
+             name="nombreP"
+             [(ngModel)]="nombreP"
+             #inputNombre="ngModel"
+      >
+    </div>
+
+  </div>
+
+  <div>
+    <label for="actoresprincipalesP">actores principales</label>
+    <input id="actoresprincipalesP"
+           name="actoresprincipalesP"
+           type="text"
+           required
+           [(ngModel)]="actoresprincipalesP"
+           #inputActoresprincipales="ngModel"
+    >
+  </div>
+  <div>
+    <label for="fechaP">Fecha</label>
+    <input id="fechaP"
+           name="fechaP"
+           type="text"
+           required
+           [(ngModel)]="fechaP"
+           #inputFecha="ngModel"
+    >
+  </div>
+  <div>
+    <label for="sinopsisP">Sinopsis</label>
+    <input id="sinopsisP"
+           name="sinopsisP"
+           type="text"
+           required
+           [(ngModel)]="sinopsisP"
+           #inputSinopsis="ngModel"
+    >
+  </div>
+  <div>
+    <label for="aniolanzamientoP">Año de Lanzamiento</label>
+    <input id="aniolanzamientoP"
+           name="aniolanzamientoP"
+           type="number"
+           required
+           [(ngModel)]="aniolanzamientoP"
+           #inputNumero="ngModel"
+    >
+  </div>
+
+  <div>
+    <label for="ratingP">Rating</label>
+    <input id="ratingP"
+           name="ratingP"
+           type="number"
+           required
+           [(ngModel)]="ratingP"
+           #inputRating="ngModel"
+    >
+  </div>
+
+
+  <button>
+    Enviar Datos
+  </button>
+</form>

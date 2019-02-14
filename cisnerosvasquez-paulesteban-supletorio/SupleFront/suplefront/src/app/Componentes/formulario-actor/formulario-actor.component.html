@@ -1,0 +1,102 @@
+<form #formularioUsuario="ngForm"
+      novalidate
+      (submit)="emitirFormularioValido(formularioUsuario)"
+>
+  <div>
+    <p *ngIf="inputNombre.errors">
+
+      <p-message
+        *ngIf="inputNombre.errors.required"
+        severity="warn"
+        text="Error: El nombre es requerido"></p-message>
+
+    </p>
+    <p *ngIf="inputApellido.errors">
+
+      <p-message
+        *ngIf="inputApellido.errors.required"
+        severity="warn"
+        text="Error: El apellido es requerido"></p-message>
+
+    </p>
+    <p *ngIf="inputFecha.errors">
+
+      <p-message
+        *ngIf="inputFecha.errors.required"
+        severity="warn"
+        text="Error: La fecha es requerido"></p-message>
+      <p-message
+        *ngIf="inputNumero.errors.email"
+        severity="warn"
+        text="Error: Un numero"></p-message>
+
+    </p>
+
+
+
+
+    <label [hidden]="true"
+           for="nombresA">Nombre</label>
+
+    <div class="ui-inputgroup">
+      <input id="nombresA"
+
+             pInputText
+             placeholder="nombresA"
+
+
+             required
+             type="text"
+             name="nombresA"
+             [(ngModel)]="nombresA"
+             #inputNombre="ngModel"
+      >
+    </div>
+
+  </div>
+
+  <div>
+    <label for="apellidosA">Apellido</label>
+    <input id="apellidosA"
+           name="apellidosA"
+           type="text"
+           required
+           [(ngModel)]="apellidosA"
+           #inputApellido="ngModel"
+    >
+  </div>
+  <div>
+    <label for="fechaA">Fecha</label>
+    <input id="fechaA"
+           name="fechaA"
+           type="text"
+           required
+           [(ngModel)]="fechaA"
+           #inputFecha="ngModel"
+    >
+  </div>
+  <div>
+    <label for="numeropeliculasA"># de Peliculas</label>
+    <input id="numeropeliculasA"
+           name="numeropeliculasA"
+           type="number"
+           required
+           [(ngModel)]="numeropeliculasA"
+           #inputNumero="ngModel"
+    >
+  </div>
+  <div>
+
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="BrowRetirado">Retirado?</label>
+    </div>
+
+    <input class="custom-select" list="browret" id="BrowRetirado" name="BrowRetirado" ngModel />
+    <datalist id="browret" >
+      <option *ngFor="let cbxrol of cbxrols" value=  {{cbxrol}}>
+    </datalist></div>
+
+  <button>
+    Enviar Datos
+  </button>
+</form>

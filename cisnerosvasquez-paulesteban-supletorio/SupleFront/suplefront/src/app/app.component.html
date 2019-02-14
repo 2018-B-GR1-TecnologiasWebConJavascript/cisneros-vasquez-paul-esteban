@@ -13,6 +13,10 @@
         <a class="nav-link" [routerLink]="
         ['/gestioneventos']">Gestionar Eventos</a>
       </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="
+        ['/actor']">Crear Actor</a>
+        </li>
       <li  class="nav-item">
         <a class="nav-link" *ngIf="_authService.esAdministrador()" [routerLink]="
         ['/gestionusuarios']" >Gestionar Usuarios</a>

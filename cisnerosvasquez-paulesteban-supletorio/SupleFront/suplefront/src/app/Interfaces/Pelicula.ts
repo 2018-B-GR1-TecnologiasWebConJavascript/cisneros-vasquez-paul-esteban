@@ -4,7 +4,6 @@ export interface Pelicula {
   createdAt?: number;
   updatedAt?: number;
   actoresprincipales?: string;
-  fechanacimiento?: string;
   aniolanzamiento ?: number;
   rating?: number;
   sinopsis ?: string;

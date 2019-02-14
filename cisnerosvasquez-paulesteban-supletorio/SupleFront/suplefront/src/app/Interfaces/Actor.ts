@@ -8,4 +8,6 @@ export interface Actor {
   fechanacimiento ?: string;
   numeropeliculas  ?: number;
   retirado  ?: boolean;
+  usuario?: number;
+
 }

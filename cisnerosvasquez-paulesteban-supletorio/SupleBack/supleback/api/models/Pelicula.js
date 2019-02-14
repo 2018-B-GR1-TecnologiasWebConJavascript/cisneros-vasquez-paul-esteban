@@ -31,7 +31,7 @@ module.exports = {
     rating  : {
       type: 'number'
     },
-    actoresPrincipales : {
+    actoresprincipales : {
       type: 'string'
 
     },
