@@ -18,7 +18,7 @@ import { IsLogin } from './Servicios/Guards/is-login';
 import { EsAdministrador } from './Servicios/Guards/es-administrador';
 import {UsuarioServicio} from "./Servicios/usuario-servicio";
 import { FormularioUsuarioComponent } from './Componentes/formulario-usuario/formulario-usuario.component';
-import {MessageModule, MessagesModule} from "primeng/primeng";
+import {ButtonModule, MessageModule, MessagesModule} from "primeng/primeng";
 import {EventoServicio} from "./Servicios/evento-servicio";
 import { ActoresComponent } from './Componentes/actores/actores.component';
 import { PeliculasComponent } from './Componentes/peliculas/peliculas.component';
@@ -51,7 +51,8 @@ import { RutaCrearActorComponent } from './Rutas/ruta-crear-actor/ruta-crear-act
     FormsModule,
     TableModule,
     MessagesModule,
-    MessageModule
+    MessageModule,
+    ButtonModule
 
   ],
   providers: [AuthServiceService,IsLogin,EsAdministrador,RolServicio,UsuarioServicio,EventoServicio,ActorServicio,PeliculaServicio],

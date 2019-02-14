@@ -40,7 +40,11 @@ module.exports = {
     peliculas: {
       collection: 'pelicula',
       via: 'actores'
+    },
+    usuario: {
+      model: 'Usuario'
     }
+
   },
 
 };

@@ -41,7 +41,13 @@ module.exports = {
     actores: {
       model: 'actor'
     }
-  },
+  } ,
+    eventos: {
+        collection: 'Eventos', // Modelo Hijo
+        via: 'peliculas' // Nombre del Campo
+    }
+    ,
+
 
 };
 

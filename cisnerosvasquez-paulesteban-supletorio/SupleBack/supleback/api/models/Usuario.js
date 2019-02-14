@@ -36,7 +36,13 @@ module.exports = {
     roles: {
       collection: 'Rol', // Modelo Hijo
       via: 'usuarios' // Nombre del Campo
+    }
+    ,
+    actores: {
+        collection: 'Actor', // Modelo Hijo
+        via: 'usuario' // Nombre del Campo
     },
+
 
   },
 

@@ -35,7 +35,12 @@ module.exports = {
     fecha: {
       type: 'string'
     }
-  },
+  } ,
+    peliculas: {
+        collection: 'Pelicula', // Modelo Hijo
+        via: 'eventos' // Nombre del Campo
+    }
+    ,
 
 };
 

@@ -58,6 +58,8 @@ module.exports.bootstrap = async function() {
     fechanacimiento : '25-09-1968',
     numeropeliculas : 100,
     retirado  : false,
+    usuario: 1,
+
 
   },{
     nombres: 'Cameron',
@@ -65,6 +67,7 @@ module.exports.bootstrap = async function() {
     fechanacimiento : '31-08-1972',
     numeropeliculas : 35,
     retirado  : true,
+    usuario: 2,
     // Set the User's Primary Key to associate the Pet with the User.
 
   }]);

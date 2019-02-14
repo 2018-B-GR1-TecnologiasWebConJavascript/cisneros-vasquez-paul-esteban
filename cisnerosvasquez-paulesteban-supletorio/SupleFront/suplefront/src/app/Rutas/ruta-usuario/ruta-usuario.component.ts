@@ -5,6 +5,7 @@ import {UsuarioServicio} from "../../Servicios/usuario-servicio";
 import { Rol } from 'src/app/Interfaces/Rol';
 import { RolServicio } from 'src/app/Servicios/rol-servicio';
 import {NgForm} from "@angular/forms";
+import {__await} from "tslib";
 
 @Component({
   selector: 'app-ruta-usuario',
@@ -22,26 +23,30 @@ export class RutaUsuarioComponent implements OnInit {
               private readonly _router: Router) { }
 
   ngOnInit() {
-    const rutaActiva$ = this._activatedRoute.params;
-    /*
-        const usuariosx$ = this._usuarioservicio.findAll();
-        usuariosx$.subscribe((usuariosx: Usuario[]) => {
-          const usuariosrolx = usuariosx
-            .forEach(
-              (usario) => {
-                usario
-                  .roles
-                  .forEach(
-                    (rol) => {
-                      this.roles.push({
-                        nombre: rol.nombre
-                      });
-                    }
-                  );
-              }
-            );
+    const actualizar = this.actualizarTablas();
+  }
 
-        });*/
+  actualizarTablas(){
+      const rutaActiva$ = this._activatedRoute.params;
+      /*
+          const usuariosx$ = this._usuarioservicio.findAll();
+          usuariosx$.subscribe((usuariosx: Usuario[]) => {
+            const usuariosrolx = usuariosx
+              .forEach(
+                (usario) => {
+                  usario
+                    .roles
+                    .forEach(
+                      (rol) => {
+                        this.roles.push({
+                          nombre: rol.nombre
+                        });
+                      }
+                    );
+                }
+              );
+
+          });*/
 
       const usuarios$ = this._rolservicio.findAll();
       usuarios$.subscribe((usuarios: Usuario[]) => {
@@ -51,38 +56,38 @@ export class RutaUsuarioComponent implements OnInit {
 
 
 
-    rutaActiva$
-      .subscribe(
-        (parametros: ParametrosRutaActualizarUsuario) => {
-          const raza$ = this._usuarioservicio
-            .findOneById(parametros.idUsuario);
+      rutaActiva$
+          .subscribe(
+              (parametros: ParametrosRutaActualizarUsuario) => {
+                  const raza$ = this._usuarioservicio
+                      .findOneById(parametros.idUsuario);
 
-          raza$
-            .subscribe(
-              (usuario: Usuario) => {
-                this.roles = [];
-                this.UsuarioAActualizar = usuario;
+                  raza$
+                      .subscribe(
+                          (usuario: Usuario) => {
+                              this.roles = [];
+                              this.UsuarioAActualizar = usuario;
 
-                const usuariosrolx = usuario.roles
-                  .forEach(
-                    (rol) => {
+                              const usuariosrolx = usuario.roles
+                                  .forEach(
+                                      (rol) => {
 
-                      this.roles.push({
-                        nombre: rol.nombre,
-                        id: rol.id
-                      });
+                                          this.roles.push({
+                                              nombre: rol.nombre,
+                                              id: rol.id
+                                          });
 
-                    }
-                  );
+                                      }
+                                  );
 
-              },
-              (error) => {
-                console.error('Error: ', error);
+                          },
+                          (error) => {
+                              console.error('Error: ', error);
+                          }
+                      );
+
               }
-            );
-
-        }
-      );
+          );
   }
   buscarRaza(idRaza) {
     const raza$ = this._usuarioservicio
@@ -116,14 +121,25 @@ export class RutaUsuarioComponent implements OnInit {
       );
   }
     onClickRol(formularioRol: NgForm) {
-      const agregarrol = this.roles.findIndex(rol => rol.nombre === formularioRol.value.BrowRolesx);
+
+     //  const actualizar = this.actualizarTablas();
+        if(this.roles.length>4){
+            alert("No se puede crear el rol")
+        }
+        else{
+            const agregarrol = this.roles.some(rol => rol.nombre === formularioRol.value.BrowRolesx);
        /* console.log(this.roles.some((value)=>{ value.nombre===formularioRol.value.BrowRolesx
             console.log("1"+formularioRol.value.BrowRolesx);
             console.log("2"+value.nombre);
         }));*/
-        console.log("2"+agregarrol);
+            const agregarro2 = this.roles.forEach(rol =>{ return console.log(rol.nombre) });
         //const agregarrol = true;
-        if(agregarrol){
+        if(agregarrol==true){
+            console.log("No se creo el rol");
+            alert("Rol repetido");
+
+      }else{
+
             console.log("Inicio");
             console.log(formularioRol.value.BrowRolesx);
             console.log(this.cbxrols.findIndex(rol => rol.nombre === formularioRol.value.BrowRolesx));
@@ -143,11 +159,8 @@ export class RutaUsuarioComponent implements OnInit {
                     }
                 );
 
-      }else{
-            console.log("No se creo el rol");
-            alert("Rol repetido")
-
       }
+        }
 
 
     }

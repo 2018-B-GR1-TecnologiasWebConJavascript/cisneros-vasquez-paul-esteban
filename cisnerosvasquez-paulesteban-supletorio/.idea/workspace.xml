@@ -18,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -26,20 +26,11 @@
       <file leaf-file-name="ruta-usuario.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="147" column="31" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+            <state relative-caret-position="284">
+              <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usuario-servicio.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Servicios/usuario-servicio.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -51,6 +42,7 @@
       <find>Evento</find>
       <find>roles</find>
       <find>findi</find>
+      <find>aler</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -91,12 +83,17 @@
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-gestion-eventos/ruta-gestion-eventos.component.ts" />
         <option value="$PROJECT_DIR$/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts" />
-        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/config/bootstrap.js" />
-        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Usuario.js" />
         <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts" />
         <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Componentes/formulario-usuario/formulario-usuario.component.html" />
         <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Componentes/formulario-usuario/formulario-usuario.component.ts" />
         <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-registro/ruta-registro.component.ts" />
+        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Actor.js" />
+        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Usuario.js" />
+        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/config/bootstrap.js" />
+        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Eventos.js" />
+        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Pelicula.js" />
+        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.html" />
+        <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.html" />
         <option value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts" />
       </list>
@@ -2284,9 +2281,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="713" />
-    <option name="width" value="734" />
-    <option name="height" value="867" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -2339,46 +2337,7 @@
               <item name="suplefront" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="suple-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cisnerosvasquez-paulesteban-supletorio" type="462c0819:PsiDirectoryNode" />
-              <item name="SupleFront" type="462c0819:PsiDirectoryNode" />
-              <item name="suplefront" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Componentes" type="462c0819:PsiDirectoryNode" />
-              <item name="formulario-usuario" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="suple-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cisnerosvasquez-paulesteban-supletorio" type="462c0819:PsiDirectoryNode" />
-              <item name="SupleFront" type="462c0819:PsiDirectoryNode" />
-              <item name="suplefront" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Rutas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="suple-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cisnerosvasquez-paulesteban-supletorio" type="462c0819:PsiDirectoryNode" />
-              <item name="SupleFront" type="462c0819:PsiDirectoryNode" />
-              <item name="suplefront" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Rutas" type="462c0819:PsiDirectoryNode" />
-              <item name="ruta-gestion-usuario" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="suple-01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cisnerosvasquez-paulesteban-supletorio" type="462c0819:PsiDirectoryNode" />
-              <item name="SupleFront" type="462c0819:PsiDirectoryNode" />
-              <item name="suplefront" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Rutas" type="462c0819:PsiDirectoryNode" />
-              <item name="ruta-registro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="suple-01" type="b2602c69:ProjectViewProjectNode" />
@@ -2401,6 +2360,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -2434,26 +2394,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550070762738</updated>
-      <workItem from="1550070766614" duration="19592000" />
+      <workItem from="1550070766614" duration="26802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19592000" />
+    <option name="totallyTimeSpent" value="26802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" weight="0.33116037" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19166666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30763888" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32464147" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32464147" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -2471,19 +2431,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/controllers/UsuarioController.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Interfaces/Actor.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Interfaces/Evento.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Interfaces/Pelicula.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Interfaces/Rol.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2572,13 +2525,6 @@
             <element signature="n#style#0;n#th#0;n#tr#0;n#ng-template#0;n#p-table#0;n#div#3;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#0;n#tr#0;n#ng-template#0;n#p-table#0;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
@@ -2686,16 +2632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -2711,20 +2647,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Usuario.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/config/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Componentes/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -2760,13 +2682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Servicios/usuario-servicio.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -2784,17 +2699,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Actor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Servicios/usuario-servicio.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/config/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Usuario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Rol.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-gestion-usuario/ruta-gestion-usuario.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Pelicula.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleBack/supleback/api/models/Eventos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../cisnerosvasquez-paulesteban-supletorio/SupleFront/suplefront/src/app/Rutas/ruta-usuario/ruta-usuario.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="147" column="31" selection-start-line="147" selection-start-column="31" selection-end-line="147" selection-end-column="31" />
+        <state relative-caret-position="284">
+          <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
