@@ -32,6 +32,9 @@ import { FormularioActorComponent } from './Componentes/formulario-actor/formula
 import { FormularioPeliculaComponent } from './Componentes/formulario-pelicula/formulario-pelicula.component';
 import { RutaActorComponent } from './Rutas/ruta-actor/ruta-actor.component';
 import { RutaActualizarActorComponent } from './Rutas/ruta-actualizar-actor/ruta-actualizar-actor.component';
+import { AgregarHijosEventosComponent } from './agregar-hijos-eventos/agregar-hijos-eventos.component';
+import {EventosPorPelicula} from "./Interfaces/EventosPorPelicula";
+import {EventopeliculaServicio} from "./Servicios/eventopelicula-servicio";
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +55,8 @@ import { RutaActualizarActorComponent } from './Rutas/ruta-actualizar-actor/ruta
     FormularioActorComponent,
     FormularioPeliculaComponent,
     RutaActorComponent,
-    RutaActualizarActorComponent
+    RutaActualizarActorComponent,
+    AgregarHijosEventosComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,7 @@ import { RutaActualizarActorComponent } from './Rutas/ruta-actualizar-actor/ruta
     ButtonModule
 
   ],
-  providers: [AuthServiceService,IsLogin,EsAdministrador,RolServicio,UsuarioServicio,EventoServicio,ActorServicio,PeliculaServicio],
+  providers: [AuthServiceService,IsLogin,EsAdministrador,RolServicio,UsuarioServicio,EventoServicio,ActorServicio,PeliculaServicio,EventopeliculaServicio],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

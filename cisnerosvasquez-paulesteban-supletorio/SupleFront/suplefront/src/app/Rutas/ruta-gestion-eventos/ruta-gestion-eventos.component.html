@@ -58,7 +58,11 @@
                 </button>
                   <button class="btn btn-info" *ngIf="_authService.esUsuario()" [routerLink]="
                   ['/gestioneventos','gestioneventos','crearevento']"> Modificar
-                  </button></div></td>
+                  </button>
+                  <button class="btn btn-info" *ngIf="_authService.esUsuario()" [routerLink]="
+                  ['/gestioneventos','gestioneventos','actualizar',busqueda.id]"> Anadir hijos a evento
+                  </button></div>
+              </td>
             </tr>
           </ng-template>
         </p-table>
@@ -80,7 +84,7 @@
 
               <td width="200" valign="top" >
                 <div><button class="btn btn-info"  [routerLink]="
-      ['/gestioneventos',busquedax.id]"> Ver
+                ['/gestioneventos',busquedax.id]"> Ver
                 </button><button *ngIf="_authService.esUsuario()" class="btn btn-info"  [routerLink]="
                   ['/gestioneventos',crearevento]"> Modificar
                 </button></div>

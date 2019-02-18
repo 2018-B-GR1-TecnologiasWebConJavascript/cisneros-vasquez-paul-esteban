@@ -12,6 +12,7 @@ import {RutaCrearActorComponent} from "./Rutas/ruta-crear-actor/ruta-crear-actor
 import {RutaActorComponent} from "./Rutas/ruta-actor/ruta-actor.component";
 import {RutaActualizarActorComponent} from "./Rutas/ruta-actualizar-actor/ruta-actualizar-actor.component";
 import {RutaCrearPeliculaComponent} from "./Rutas/ruta-crear-pelicula/ruta-crear-pelicula.component";
+import {AgregarHijosEventosComponent} from "./agregar-hijos-eventos/agregar-hijos-eventos.component";
 
 const routes: Routes = [
   {
@@ -65,8 +66,13 @@ const routes: Routes = [
       },
       {
         // menu/gestion-usuarios
-        path: ':idEvento',
-        component: RutaEventoComponent,
+        path: ':idEventos',
+        component: AgregarHijosEventosComponent,
+      },
+      {
+        // menu/gestion-usuarios
+        path: 'gestioneventos/actualizar/:idEvento',
+        component: AgregarHijosEventosComponent,
       },
 
     ]

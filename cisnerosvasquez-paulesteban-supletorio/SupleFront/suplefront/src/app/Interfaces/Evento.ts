@@ -5,5 +5,5 @@ export interface Evento {
   updatedAt?: number;
   latitud?: string;
   longitud?: string;
-
+  fecha: string;
 }

@@ -7,6 +7,7 @@ import {map} from 'rxjs/operators';
 import {environment} from "../../environments/environment";
 import {Evento} from "../Interfaces/Evento";
 
+
 @Injectable()
 export class EventoServicio {
   nombreModelo = '/Eventos';
@@ -36,6 +37,14 @@ return this._httpClient
  .post(url, objetoAGuardar)
  .pipe(map(r => <Evento> r)); // Castear
 }
+  findOneById(id: number | string): Observable<Evento> {
+    const url = environment.url + this.nombreModelo
+      + '/' + id;
+
+    return this._httpClient
+      .get(url)
+      .pipe(map(r => <Evento> r)); // Castear
+  }
 
 }
 

@@ -38,9 +38,15 @@ module.exports = {
   } ,
     peliculas: {
         collection: 'Pelicula', // Modelo Hijo
-        via: 'eventos' // Nombre del Campo
+        via: 'idEvento',
+      through: 'EventosPorMedicamento' // Nombre del Campo
     }
+
     ,
+  facturas:{
+    collection: 'FacturaCabecera',
+    via: 'idEvento'
+  },
 
 };
 

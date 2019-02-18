@@ -42,11 +42,13 @@ module.exports = {
       model: 'actor'
     }
   } ,
-    eventos: {
-        collection: 'Eventos', // Modelo Hijo
-        via: 'peliculas' // Nombre del Campo
-    }
-    ,
+
+    eventos:{
+    collection:'Evento',
+    via:'idPelicula',
+    through: 'EventosPorPelicula'
+
+  }
 
 
 };

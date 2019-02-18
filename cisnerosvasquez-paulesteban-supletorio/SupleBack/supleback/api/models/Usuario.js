@@ -22,6 +22,7 @@ module.exports = {
     password: {
       type: 'string',
       required: true,
+      regex: /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/
      // regex: /^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,15})$/
     },
     fechanacimiento: {
@@ -42,6 +43,10 @@ module.exports = {
         collection: 'Actor', // Modelo Hijo
         via: 'usuario' // Nombre del Campo
     },
+    facturas: {
+      collection: 'FacturaCabecera',
+      via: 'idUsuario'
+    }
 
 
   },

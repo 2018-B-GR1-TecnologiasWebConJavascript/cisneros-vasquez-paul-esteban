@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+<div class="container"
+>
+
+
+  <div class="row">
+    <div class="col-md-4">
+      <h5>Evento</h5>
+      <div class="card">
+        <div class="card-body">
+          <br>
+
+         <p>{{Aevento.id}}</p>
+          <p>{{Aevento.nombre}}</p>
+          <p>{{Aevento.fecha}}</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h5>Peliculas del Evento</h5>
+      <div class="card">
+
+        <tr *ngFor="let pelicul of eventopeliculas">
+          <td> {{pelicul.nombre}} </td>
+
+          <td>
+            <button (click)="eliminarPelicula(pelicul.id)"> X</button>
+          </td>
+        </tr>
+
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h5>Listar Peliculas</h5>
+      <div class="card">
+        <div class="form-group">
+          <select #selectedPelicula
+                  class="form-control">
+
+            <option *ngFor="let pelicula  of peliculas"
+                    [value]="pelicula.id">
+              {{pelicula.nombre}}
+
+            </option>
+          </select>
+
+
+        </div>
+
+        <br>
+
+
+
+        <br>
+
+
+        <button (click)="crearPelicula(selectedPelicula.value)"
+                >
+          Añadir Pelicula
+        </button>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+</html>
