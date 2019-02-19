@@ -120,6 +120,7 @@ module.exports.bootstrap = async function() {
     estado: "En Compra",
     idUsuario: 3,
     idEvento: 1,
+    nombreCajero:"Cajero",
 
   },
     {
@@ -134,7 +135,7 @@ module.exports.bootstrap = async function() {
       estadoo: "Pagado",
       idUsuario: 3,
       idEvento: 1,
-
+      nombreCajero:"Cajero",
     }]);
   // ```
   await Rol.addToCollection(1, 'usuarios', [1]);

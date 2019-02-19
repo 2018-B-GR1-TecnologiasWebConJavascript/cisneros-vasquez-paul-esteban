@@ -35,7 +35,7 @@ export class ActorServicio {
       fechanacimiento: fechanacimiento,
       numeropeliculas: numeropeliculas,
       retirado: false,
-      actores: this._authService.usuario.id,
+      actores: 4,
 
     };
 
@@ -46,5 +46,10 @@ export class ActorServicio {
       .pipe(map(r => <Actor> r)); // Castear
   }
 
+  delete(id: number|string): Observable<Actor> {
+    return this._httpClient
+      .delete(environment.url + this.nombreModelo + `/${id}`)
+      .pipe(map(r => <Actor> r)); // Castear
+  }
 }
 

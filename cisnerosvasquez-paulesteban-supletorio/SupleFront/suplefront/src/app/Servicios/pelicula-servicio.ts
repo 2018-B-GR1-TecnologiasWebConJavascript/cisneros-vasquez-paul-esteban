@@ -37,7 +37,7 @@ export class PeliculaServicio {
       aniolanzamiento : aniolanzamiento,
       rating: rating,
       sinopsis : sinopsis,
-      actores: this._authService.usuario.id,
+      //actores: this._authService.usuario.id,
 
     };
 

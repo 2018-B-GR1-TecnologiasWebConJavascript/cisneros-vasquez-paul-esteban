@@ -68,7 +68,10 @@ module.exports = {
 
     idEvento:{
       model:'Eventos'
-    }
+    },
+    nombreCajero: {
+      type: 'string'
+    },
   },
 
 };

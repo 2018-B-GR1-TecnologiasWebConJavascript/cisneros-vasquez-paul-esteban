@@ -57,8 +57,9 @@ tipop:any =["Efectivo","Tarjeta","Cheque"];
                     (detalle,index) => {
                     this.totalx= this.totalx+detalle.total;
                       this.item.push({
-                       // nombre:this.nombreitem[parseInt(detalle.id)],
-                        nombre:detalle.id,
+                      // nombre:this.nombreitem[parseInt(detalle.id)],
+                       // nombre: (factura.idEvento.nombre),
+                        nombre: detalle.id,
                         id: detalle.id,
                         cantidad: detalle.cantidad,
                         precio: detalle.precio,
@@ -130,6 +131,7 @@ eliminarfacturadetalle(id:string|number){
       estado: "Pagado",
       idUsuario: 3,
       idEvento: 1,
+      nombreCajero: this._authService.usuario.nombre,
     };
 
     const razaActualizada$ = this._facturacabeceraservicio

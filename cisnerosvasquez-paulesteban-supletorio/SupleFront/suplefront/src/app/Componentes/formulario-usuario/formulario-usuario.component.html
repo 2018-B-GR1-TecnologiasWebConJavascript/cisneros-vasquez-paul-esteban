@@ -11,6 +11,7 @@
         text="Error: El nombre es requerido"></p-message>
 
     </p>
+
     <p *ngIf="inputPassword.errors">
 
       <p-message
@@ -48,6 +49,7 @@
              required
              type="text"
              name="nombreU"
+             pattern="^[a-zA-Z ]*$"
              [(ngModel)]="nombreU"
              #inputNombre="ngModel"
       >
@@ -59,10 +61,12 @@
     <label for="correoU">Correo</label>
     <input id="correoU"
            name="correoU"
-           type="text"
+           type="email"
            required
            [(ngModel)]="correoU"
            #inputCorreo="ngModel"
+           email
+
     >
   </div>
   <div>
@@ -71,6 +75,7 @@
            name="passwordU"
            type="password"
            required
+           pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$"
            [(ngModel)]="passwordU"
            #inputPassword="ngModel"
     >
@@ -86,7 +91,7 @@
       <option *ngFor="let cbxrol of cbxrols" value=  {{cbxrol.nombre}}>
     </datalist></div>
 
-  <button>
+  <button [disabled]="formularioUsuario.invalid">
     Enviar Datos
   </button>
 </form>

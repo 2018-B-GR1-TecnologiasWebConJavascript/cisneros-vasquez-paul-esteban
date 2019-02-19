@@ -65,6 +65,8 @@ selected;
   onOptionsSelected(event){
     let value = event.target.value;
     this.precioacordado=this.arregloprecio[value-1];
+    console.log(value);
+    console.log(this.precioacordado);
   }
   crearitem(peliculaEscogida: any){
     const auxid= parseInt(peliculaEscogida)

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActorServicio} from "../../Servicios/actor-servicio";
+import {AuthServiceService} from "../../Servicios/auth-service.service";
 
 @Component({
   selector: 'app-ruta-actor',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RutaActorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly _authService: AuthServiceService,
+              private readonly _actorservicio: ActorServicio) { }
 
   ngOnInit() {
   }

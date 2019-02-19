@@ -26,7 +26,8 @@ export class RutaCrearPeliculaComponent implements OnInit {
         RolObjeto.aniolanzamiento ,
         RolObjeto.rating,
         RolObjeto.sinopsis,
-        //RolObjeto.retirado,
+
+
       );
 
     crearRaza$

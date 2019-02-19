@@ -17,5 +17,5 @@ export interface FacturaCabecera {
   idUsuario:number;
   idEvento:number;
   detalles: FacturaDetalle[];
-
+  nombreCajero:string;
 }
