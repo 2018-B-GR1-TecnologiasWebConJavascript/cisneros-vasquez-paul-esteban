@@ -7,10 +7,6 @@ import {map} from 'rxjs/operators';
 import {environment} from "../../environments/environment";
 import {EventosPorPelicula} from "../Interfaces/EventosPorPelicula";
 
-
-
-
-
 @Injectable()
 export class EventopeliculaServicio {
   nombreModelo = '/EventosPorPelicula';
@@ -39,6 +35,7 @@ export class EventopeliculaServicio {
       .pipe(map(r => <EventosPorPelicula>r)); // Casteo
 
   }
+
   create(idPelicula: number|string,idEvento: number|string,
          preciobase: number,
   ): Observable<EventosPorPelicula> {

@@ -3,6 +3,7 @@ import { AuthServiceService } from 'src/app/Servicios/auth-service.service';
 import {NgForm} from "@angular/forms";
 import {Evento} from "../../Interfaces/Evento";
 import {EventoServicio} from "../../Servicios/evento-servicio";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-ruta-gestion-eventos',
@@ -17,7 +18,8 @@ export class RutaGestionEventosComponent implements OnInit {
   show2 = false;
 
   constructor(private readonly _eventosservicio: EventoServicio,
-              private readonly _authService:AuthServiceService) { }
+              private readonly _authService:AuthServiceService,
+              private readonly _router: Router) { }
 
   ngOnInit() {
     const show = true ;
@@ -58,5 +60,10 @@ export class RutaGestionEventosComponent implements OnInit {
     }else{
       this.busquedax= this.busqueda;
     }
+  }
+  gestionfacturas(id:number|string){
+//alert("Mensaje"+id);
+    const heladoxx =this._eventosservicio.ideventoaux=id;
+    this._router.navigate(['/gestionfacturas']);
   }
 }

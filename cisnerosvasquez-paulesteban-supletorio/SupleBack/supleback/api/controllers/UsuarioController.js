@@ -56,6 +56,16 @@ module.exports = {
     } else {
       return res.badRequest({mensaje: 'Usuario No consta en la base'});
     }
-  }
+  },
+  buscarUsuariofacturas: async function (req, res) {
+    const param = req.allParams();
+
+    var usuarioEncontrado = await  Usuario.find({
+      id: param.idusuario,
+    }).populate('facturas');
+
+    console.log(usuarioEncontrado);
+    return res.ok(usuarioEncontrado);
+  },
 };
 

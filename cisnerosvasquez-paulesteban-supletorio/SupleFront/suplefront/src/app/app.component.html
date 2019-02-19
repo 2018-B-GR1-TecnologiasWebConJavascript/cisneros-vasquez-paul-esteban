@@ -14,13 +14,18 @@
         ['/gestioneventos']">Gestionar Eventos</a>
       </li>
         <li class="nav-item">
-            <a class="nav-link" [routerLink]="
+            <a class="nav-link" *ngIf="_authService.esUsuario()"[routerLink]="
         ['/actor']">Crear Actor</a>
         </li>
       <li  class="nav-item">
         <a class="nav-link" *ngIf="_authService.esAdministrador()" [routerLink]="
         ['/gestionusuarios']" >Gestionar Usuarios</a>
       </li>
+      <li  class="nav-item">
+        <a class="nav-link"  *ngIf="_authService.esCliente()"[routerLink]="
+        ['/listafacturas']" >Lista Facturas</a>
+      </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           Cerrar Sesion

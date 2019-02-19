@@ -7,5 +7,6 @@ export interface EventosPorPelicula {
   updatedAt?: number;
   idPelicula: Pelicula[];
   idEvento: Evento[];
+  preciobase:number;
 
 }

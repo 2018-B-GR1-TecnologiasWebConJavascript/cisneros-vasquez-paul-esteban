@@ -13,6 +13,10 @@ import {RutaActorComponent} from "./Rutas/ruta-actor/ruta-actor.component";
 import {RutaActualizarActorComponent} from "./Rutas/ruta-actualizar-actor/ruta-actualizar-actor.component";
 import {RutaCrearPeliculaComponent} from "./Rutas/ruta-crear-pelicula/ruta-crear-pelicula.component";
 import {AgregarHijosEventosComponent} from "./agregar-hijos-eventos/agregar-hijos-eventos.component";
+import {RutaGestionFacturasComponent} from "./Rutas/ruta-gestion-facturas/ruta-gestion-facturas.component";
+import {RutaFacturaComponent} from "./Rutas/ruta-factura/ruta-factura.component";
+import {RutaListaFacturaComponent} from "./Rutas/ruta-lista-factura/ruta-lista-factura.component";
+import {RutaAnadirItemComponent} from "./Rutas/ruta-anadir-item/ruta-anadir-item.component";
 
 const routes: Routes = [
   {
@@ -61,17 +65,17 @@ const routes: Routes = [
     children:[
       {
         // menu/gestion-usuarios
-        path: 'gestioneventos/crearevento',
+        path: 'crearevento',
         component: RutaCrearEventoComponent,
       },
       {
         // menu/gestion-usuarios
         path: ':idEventos',
-        component: AgregarHijosEventosComponent,
+        component: RutaEventoComponent,
       },
       {
         // menu/gestion-usuarios
-        path: 'gestioneventos/actualizar/:idEvento',
+        path: 'actualizar/:idEventos',
         component: AgregarHijosEventosComponent,
       },
 
@@ -99,7 +103,42 @@ const routes: Routes = [
             },
 
         ]
-    }
+    },
+  {
+    // NOMBRE
+    path: 'gestionfacturas',
+    component: RutaGestionFacturasComponent,
+    // COMPONENTE
+    children:[
+      {
+        // menu/gestion-usuarios
+        path: ':idFactura',
+        component: RutaFacturaComponent,
+      },
+
+    ]
+  },
+  {
+    // NOMBRE
+    path: 'listafacturas',
+    component: RutaListaFacturaComponent,
+    // COMPONENTE
+    children:[
+      {
+        // menu/gestion-usuarios
+        path: ':idFactura',
+        component: RutaFacturaComponent,
+      },
+
+    ]
+  },
+  {
+    // NOMBRE
+    path: 'anadiritem/:idFactura',
+    pathMatch: 'full',
+    component: RutaAnadirItemComponent
+    // COMPONENTE
+  },
 ];
 
 @NgModule({

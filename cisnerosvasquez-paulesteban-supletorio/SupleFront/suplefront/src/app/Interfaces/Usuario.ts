@@ -1,5 +1,7 @@
 import {Rol} from "./Rol";
 
+import {FacturaCabecera} from "./FacturaCabecera";
+
 
 export interface Usuario {
   id?: number;
@@ -10,6 +12,6 @@ export interface Usuario {
   fechanacimiento: string;
   password: string;
   roles: Rol[];
-
+  facturas: FacturaCabecera[];
 
 }

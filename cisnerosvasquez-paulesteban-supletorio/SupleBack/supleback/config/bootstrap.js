@@ -8,7 +8,6 @@
  * For more information on seeding your app with fake data, check out:
  * https://sailsjs.com/config/bootstrap
  */
-
 module.exports.bootstrap = async function() {
 
   // By convention, this is a good place to set up fake data during development.
@@ -23,6 +22,8 @@ module.exports.bootstrap = async function() {
   await Rol.createEach([
     { nombre: 'Administrador' ,},
     { nombre: 'Usuario', },
+    { nombre: 'Cliente' ,},
+    { nombre: 'Cajero', },
     //   // etc.
   ]);
   if (await Usuario.count() > 0) {
@@ -31,7 +32,9 @@ module.exports.bootstrap = async function() {
   //
   await Usuario.createEach([
     { nombre: 'Paul' , correo: 'paul.cisneros@epn.edu.ec',password: 'X12345678x@', fechanacimiento: '1995-03-20',},
-    { nombre: 'Gabo' , correo: 'gabo.x@epn.edu.ec',password: 'X12345678x@', fechanacimiento: '1995-05-25',},
+    { nombre: 'Usuario' , correo: 'gabo.x@epn.edu.ec',password: 'X12345678x@', fechanacimiento: '1995-05-25',},
+    { nombre: 'Cliente' , correo: 'gabo.x@epn.edu.ec',password: 'X12345678x@', fechanacimiento: '1995-05-25',},
+    { nombre: 'Cajero' , correo: 'gabo.x@epn.edu.ec',password: 'X12345678x@', fechanacimiento: '1995-05-25',},
 
     //   // etc.
   ]);
@@ -100,8 +103,43 @@ module.exports.bootstrap = async function() {
     // Set the User's Primary Key to associate the Pet with the User.
     actores: 2,
   }]);
+
+  if (await FacturaCabecera.count() > 0) {
+    return;
+  }
+
+  await FacturaCabecera.createEach([{
+    nombre: 'Paul',
+    cedula  : 1723436208,
+    telefono  : 2654036,
+    direccion  : "Mi casa",
+    correo   : "paul.cisneros@epn.edu.ec",
+    fecha: "18/02/2019",
+    total: 15,
+    tipoPago: "Efectivo",
+    estado: "En Compra",
+    idUsuario: 3,
+    idEvento: 1,
+
+  },
+    {
+      nombre: 'Paul',
+      cedula  : 1723436208,
+      telefono  : 2654036,
+      direccion  : "Mi casa",
+      correo   : "paul.cisneros@epn.edu.ec",
+      fecha: "18/02/2019",
+      total: 15,
+      tipoPago: "Efectivo",
+      estadoo: "Pagado",
+      idUsuario: 3,
+      idEvento: 1,
+
+    }]);
   // ```
   await Rol.addToCollection(1, 'usuarios', [1]);
   await Rol.addToCollection(2, 'usuarios', [2]);
+  await Rol.addToCollection(3, 'usuarios', [3]);
+  await Rol.addToCollection(4, 'usuarios', [4]);
 
 };

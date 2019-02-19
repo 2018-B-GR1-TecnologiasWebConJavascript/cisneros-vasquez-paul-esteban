@@ -1,0 +1,52 @@
+<div class="col-md-4">
+  <h5>Hijos en Eventos</h5>
+  <div class="card">
+    <div class="form-group">
+      <select #selectedPelicula
+              class="form-control" (change)='onOptionsSelected($event)' [(ngModel)]="selected">
+
+        <option *ngFor="let eventopelicula  of eventopeliculas"
+                [value]="eventopelicula.id">
+          {{eventopelicula.nombre}}
+
+        </option>
+
+
+
+      </select>
+
+
+    </div>
+
+    <br>
+    <div>
+      <label for="precio">Precio base</label>
+      <input id="precio"
+             name="precio"
+             type="number"
+             value={{precioacordado}}
+             [(ngModel)]="precioacordado"
+      >
+
+    </div>
+    <div>
+      <label for="cantidad">Cantidad</label>
+      <input id="cantidad"
+             name="cantidad"
+             type="number"
+             [(ngModel)]="cantidad"
+      >
+
+    </div>
+
+    <br>
+
+
+    <button (click)="crearitem(selectedPelicula.value)"
+    >
+      Añadir item
+    </button>
+  </div>
+
+
+</div>

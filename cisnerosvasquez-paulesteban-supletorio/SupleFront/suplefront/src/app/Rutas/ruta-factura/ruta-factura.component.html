@@ -1,0 +1,177 @@
+
+
+
+
+<div class="container">
+
+
+
+  <div >
+    <form >
+    <div class="row">
+      <!--Primera Columna-->
+      <div class="col-md-6">
+        <h5>Datos Cliente</h5>
+        <br>
+
+          <div class="form-group row">
+
+              <label for="nombre">Nombre</label>
+              <input id="nombre"
+                     name="nombre"
+                     type="text"
+                     [(ngModel)]="detallecabecera.nombre"
+                     [disabled]="_authService.esCliente() || estadocompra()"
+              >
+
+          </div>
+
+        <div class="form-group row">
+
+          <label for="cedula">Cedula</label>
+          <input id="cedula"
+                 name="cedula"
+                 type="number"
+                 [(ngModel)]="detallecabecera.cedula"
+                 [disabled]="_authService.esCliente() || estadocompra()"
+          >
+
+        </div>
+        <div class="form-group row">
+
+          <label for="telefono">Telefono</label>
+          <input id="telefono"
+                 name="telefono"
+                 type="number"
+                 [(ngModel)]="detallecabecera.telefono"
+                 [disabled]="_authService.esCliente() || estadocompra()"
+          >
+
+        </div>
+        <div class="form-group row">
+
+          <label for="correo">Correo</label>
+          <input id="correo"
+                 name="correo"
+                 type="email"
+                 [(ngModel)]="detallecabecera.correo"
+                 [disabled]="_authService.esCliente() || estadocompra()"
+          >
+
+        </div>
+
+        <div>
+          <h5>Datos de Factura</h5>
+          <div class="form-group" >
+            <select #selectedTipo
+                    class="form-control" (change)='onOptionsSelected($event)' [(ngModel)]="selected" value="{{detallecabecera.tipoPago}}" >
+
+              <option *ngFor="let tipo  of tipop"
+                      [value]="tipo" [disabled]="_authService.esCliente() || estadocompra()">
+                {{tipo}}
+
+              </option>
+
+
+
+            </select>
+
+
+          </div>
+        </div>
+      </div>
+      <!--Segunda Columna-->
+      <div class="col-md-6">
+
+        <div class="form-group row">
+
+          <label for="dirrecion">Dirrecion</label>
+          <input id="dirrecion"
+                 name="dirrecion"
+                 type="text"
+                 [(ngModel)]="detallecabecera.direccion"
+                 [disabled]="_authService.esCliente() || estadocompra()"
+          >
+
+        </div>
+        <div class="form-group row">
+
+          <label for="estado">Estado</label>
+          <input id="estado"
+                 name="estado"
+                 type="text"
+                 [(ngModel)]="detallecabecera.estado"
+                 [disabled]="true"
+          >
+
+        </div>
+
+        <br>
+        <div class="form-group row">
+
+          <label for="total">Total</label>
+          <input id="total"
+                 name="total"
+                 type="number"
+                 [(ngModel)]="totalx"
+                 [disabled]="true"
+          >
+
+        </div>
+        <div>
+          <div class="col-md-12 float-right">
+
+            <div class="row justify-content-md-center">
+              <button type="button" class="btn btn-success " *ngIf="_authService.esCajero()" (click)="actualizardatosfactura()">Guardar Datos</button>
+            </div>
+            <br>
+            <div class="row justify-content-md-center">
+                <button type="button" class="btn btn-secondary " [disabled]="estadocompra()" *ngIf="_authService.esCajero()" (click)="anadiritem()">Añadir Item</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin de la Fila -->
+    </div>
+    </form>
+    <!--Fila para Detalle de Factura -->
+    <h5>Detalle de factura </h5>
+    <div class="row">
+      <div class="col-lg-12">
+        <div>
+          <div class="table-responsive">
+            <p-table [columns]="cols" [value]="item" [paginator]="true" [rows]="5" >
+              <ng-template pTemplate="header" let-columns>
+                <tr >
+                  <th *ngFor="let col of columns" style="color: #fff; background-color: #337ab7; border-color: #337ab7;">
+                    {{col.header}}
+                  </th>
+                </tr>
+              </ng-template>
+              <ng-template pTemplate="body" let-item>
+                <tr >
+                  <td valign="top">{{item.nombre}}</td>
+                  <td valign="top"> {{item.cantidad}}</td>
+                  <td valign="top"> {{item.precio}}</td>
+                  <td valign="top">$ {{item.total}}</td>
+                  <td width="200" valign="top" >
+                    <div>
+
+                      <button class="btn btn-info" (click)="eliminarfacturadetalle(item.id)"> Eliminar
+                      </button></div>
+                  </td>
+                </tr>
+              </ng-template>
+            </p-table>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <button type="button" class="btn btn-success " [disabled]="cajallena()" (click)="actualizarfacturadetalle()">Pagar Factura</button>
+        </div>
+      </div>
+    </div>
+    <!--Fin del contenedor-->
+
+  </div>
+</div>
+

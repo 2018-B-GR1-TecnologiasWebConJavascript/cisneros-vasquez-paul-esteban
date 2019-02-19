@@ -10,6 +10,7 @@ import {Evento} from "../Interfaces/Evento";
 
 @Injectable()
 export class EventoServicio {
+  ideventoaux;
   nombreModelo = '/Eventos';
   constructor(private readonly _httpClient: HttpClient) { }
 

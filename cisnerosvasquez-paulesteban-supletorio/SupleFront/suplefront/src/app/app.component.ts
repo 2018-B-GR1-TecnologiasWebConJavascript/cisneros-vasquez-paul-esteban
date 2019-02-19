@@ -9,4 +9,5 @@ import {AuthServiceService} from "./Servicios/auth-service.service";
 export class AppComponent {
   title = 'suplefront';
   constructor(private readonly _authService: AuthServiceService) { }
+ // usuario = this._authService.usuario;
 }

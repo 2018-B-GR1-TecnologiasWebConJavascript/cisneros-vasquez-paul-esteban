@@ -18,7 +18,7 @@ import {NgForm} from "@angular/forms";
 })
 export class AgregarHijosEventosComponent implements OnInit {
 
-
+precio;
 
   peliculas: any = [];
 /*
@@ -125,7 +125,7 @@ export class AgregarHijosEventosComponent implements OnInit {
        // console.log(this.peliculas.findIndex(rol => rol.nombre === peliculaEscogida));
         console.log(this.Aevento.id);
 
-        const crearRol$ = this._eventopeliculaservicio.create(peliculaEscogida,this.Aevento.id,25);
+        const crearRol$ = this._eventopeliculaservicio.create(peliculaEscogida,this.Aevento.id,this.precio);
 
         crearRol$
           .subscribe(

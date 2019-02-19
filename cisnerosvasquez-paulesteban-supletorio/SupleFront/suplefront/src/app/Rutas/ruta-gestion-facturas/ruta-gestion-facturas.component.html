@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container" *ngIf="_authService.esCajero()">
   <!-- Inicio BuscadorImagen -->
   <div  class="row">
     <div class="col-lg-12">
-      <img  height="350" width="100%" src="../../../assets/Inauguracion_CJ_2017_1.jpg">
+      <img  height="350" width="100%" src="../../../assets/cajero.jpg">
     </div>
 
   </div>
@@ -12,25 +12,42 @@
     <div class="row">
 
 
-      <div class="col-lg-12">
+      <div class="col-lg-6">
 
         <div class="input-group mb-4">
           <div class="input-group-prepend">
 
-            <label class="input-group-text" for="BrowEvento">Eventos</label>
+            <label class="input-group-text" for="BrowFactura">Facturas</label>
           </div>
-          <input class="custom-select" id="BrowEvento" name="BrowEvento"  ngModel/>
+          <input class="custom-select" id="BrowFactura" name="BrowFactura"  ngModel/>
         </div>
+      </div>
+      <div class="col-lg-6">
+        <button class="btn btn-primary" [disabled]="!f.dirty" > Buscar
+        </button>
+
       </div>
 
     </div>
+
     <div class="row">
       <div class="col-lg-4">
 
       </div>
       <div class="col-lg-4">
-        <button class="btn btn-primary" [disabled]="!f.dirty" > Buscar Eventos
-        </button>
+
+        <div class="input-group mb-4">
+          <div class="input-group-prepend">
+
+            <label class="input-group-text" for="BrowEstado">Filtrar por Estado:</label>
+          </div>
+          <input class="custom-select" list="browestados" id="BrowEstado" name="BrowEstado"  ngModel/>
+          <datalist id="browestados">
+            <option *ngFor="let cbxestad of cbxestado" value=  {{cbxestad}}>
+              {{cbxestad}}
+          </datalist>
+
+        </div>
       </div>
       <div class="col-lg-4">
 
@@ -50,19 +67,14 @@
           <ng-template pTemplate="body" let-busqueda>
             <tr >
               <td valign="top">{{busqueda.nombre}}</td>
-              <td valign="top"> 2019-02-08</td>
-
+              <td valign="top"> {{busqueda.fecha}}</td>
+              <td valign="top">$ {{busqueda.total}}</td>
+              <td valign="top"> {{busqueda.estado}}</td>
               <td width="200" valign="top" >
-                <div><button class="btn btn-info"  [routerLink]="
-      ['/gestioneventos',busqueda.id]"> Ver
-                </button>
-                  <button class="btn btn-info" *ngIf="_authService.esUsuario()" [routerLink]="
-                  ['/gestioneventos','crearevento']"> Modificar
-                  </button>
-                  <button class="btn btn-info" *ngIf="_authService.esUsuario()" [routerLink]="
-                  ['/gestioneventos','actualizar',busqueda.id]"> Anadir hijos a evento
-                  </button>
-                  <button class="btn btn-info"  *ngIf="_authService.esCajero()" (click)="gestionfacturas(busqueda.id)"> Gestion Facturas
+                <div>
+
+                  <button class="btn btn-info"  [routerLink]="
+                  ['/gestionfacturas',busqueda.id]"> Gestionar
                   </button></div>
               </td>
             </tr>
@@ -79,26 +91,19 @@
               </th>
             </tr>
           </ng-template>
-          <ng-template pTemplate="body" let-busquedax>
+          <ng-template pTemplate="body" let-busqueda>
             <tr >
-              <td valign="top">{{busquedax.nombre}}</td>
-              <td valign="top"> 2019-02-08</td>
-
+              <td valign="top">{{busqueda.nombre}}</td>
+              <td valign="top"> {{busqueda.fecha}}</td>
+              <td valign="top">$ {{busqueda.total}}</td>
+              <td valign="top"> {{busqueda.estado}}</td>
               <td width="200" valign="top" >
-                <div><button class="btn btn-info"  [routerLink]="
-                ['/gestioneventos',busquedax.id]"> Ver
-                </button><button *ngIf="_authService.esUsuario()" class="btn btn-info"  [routerLink]="
-                  ['/gestioneventos','crearevento']"> Modificar
-                </button>
-                  <button class="btn btn-info" *ngIf="_authService.esUsuario()" [routerLink]="
-                  ['/gestioneventos','actualizar',busqueda.id]"> Anadir hijos a evento
-                  </button>
-                  <button class="btn btn-info"  *ngIf="_authService.esCajero()" (click)="gestionfacturas(busqueda.id)"> Gestion Facturas
-                  </button>
-                </div>
+                <div>
 
+                  <button class="btn btn-info"  [routerLink]="
+                  ['/gestionfacturas',busqueda.id]"> Gestionar
+                  </button></div>
               </td>
-
             </tr>
           </ng-template>
         </p-table>

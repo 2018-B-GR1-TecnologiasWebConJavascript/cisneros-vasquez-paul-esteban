@@ -35,6 +35,15 @@ import { RutaActualizarActorComponent } from './Rutas/ruta-actualizar-actor/ruta
 import { AgregarHijosEventosComponent } from './agregar-hijos-eventos/agregar-hijos-eventos.component';
 import {EventosPorPelicula} from "./Interfaces/EventosPorPelicula";
 import {EventopeliculaServicio} from "./Servicios/eventopelicula-servicio";
+import { RutaGestionFacturasComponent } from './Rutas/ruta-gestion-facturas/ruta-gestion-facturas.component';
+import { RutaFacturaComponent } from './Rutas/ruta-factura/ruta-factura.component';
+import { RutaAnadirItemComponent } from './Rutas/ruta-anadir-item/ruta-anadir-item.component';
+import { RutaListaFacturaComponent } from './Rutas/ruta-lista-factura/ruta-lista-factura.component';
+import { FormularioFacturaComponent } from './Componentes/formulario-factura/formulario-factura.component';
+import {FacturaDetalleServicio} from "./Servicios/factura-detalle-servicio";
+import {FacturaCabeceraServicio} from "./Servicios/factura-cabecera-servicio";
+import {EsCliente} from "./Servicios/Guards/es-cliente";
+import {EsCajero} from "./Servicios/Guards/es-cajero";
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +65,12 @@ import {EventopeliculaServicio} from "./Servicios/eventopelicula-servicio";
     FormularioPeliculaComponent,
     RutaActorComponent,
     RutaActualizarActorComponent,
-    AgregarHijosEventosComponent
+    AgregarHijosEventosComponent,
+    RutaGestionFacturasComponent,
+    RutaFacturaComponent,
+    RutaAnadirItemComponent,
+    RutaListaFacturaComponent,
+    FormularioFacturaComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +83,13 @@ import {EventopeliculaServicio} from "./Servicios/eventopelicula-servicio";
     ButtonModule
 
   ],
-  providers: [AuthServiceService,IsLogin,EsAdministrador,RolServicio,UsuarioServicio,EventoServicio,ActorServicio,PeliculaServicio,EventopeliculaServicio],
+  providers: [AuthServiceService,
+    IsLogin,EsAdministrador,RolServicio,EsCliente,EsCajero,
+    UsuarioServicio,EventoServicio,
+    ActorServicio,PeliculaServicio,
+    EventopeliculaServicio,
+    FacturaDetalleServicio,
+    FacturaCabeceraServicio],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
